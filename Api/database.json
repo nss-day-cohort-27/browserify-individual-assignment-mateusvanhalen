@@ -1,0 +1,18 @@
+{
+    "places": [
+      {
+        "location": "Aruba",
+        "type": "beach",
+        "date": "February 2017",
+        "rating": "Very good",
+        "id": 1
+      },
+      {
+        "location": "South Carolina",
+        "type": "beach",
+        "date": "",
+        "rating": "Great",
+        "id": 2
+      }
+    ]
+}
