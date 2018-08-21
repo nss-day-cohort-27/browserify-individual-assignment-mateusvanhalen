@@ -1,3 +1,5 @@
+const inputVacation = require("./vacationForm")
+
 const vacationManager = Object.create(null, {
     getVacations: {
         value: () => {
@@ -5,20 +7,18 @@ const vacationManager = Object.create(null, {
         }
     },
 
-saveVacationEntry: {
-    value: (newEntry) => {
-        return fetch("http://localhost:8088/places", {
-            method: "POST",
-            headers: {
+    saveVacationEntry: {
+        value: (newEntry) => {
+            return fetch("http://localhost:8088/places", {
+                method: "POST",
+                headers: {
 
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(newEntry)
-        }).then(r => r.json)
-    }
-},
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newEntry)
+            }).then(r => r.json)
+        }
+    },
 })
-
-
 
 module.exports = vacationManager
