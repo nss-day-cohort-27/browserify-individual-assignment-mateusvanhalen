@@ -3,7 +3,7 @@ const VacationDOM = Object.create(null, {
     VacationHTML: {
         value: (data) => {
             return `
-            <div class="wrapper">
+            <div id="entry">
                 <div class="inputVacationDOM">
                 <h3>${data.location}</h3>
                     <p>${data.type}</p>

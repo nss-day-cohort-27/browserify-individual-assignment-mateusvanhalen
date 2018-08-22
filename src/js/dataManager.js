@@ -1,5 +1,3 @@
-const inputVacation = require("./vacationForm")
-
 const vacationManager = Object.create(null, {
     getVacations: {
         value: () => {
